@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(-45deg, #1a1a2e, #162447, #0f3460, #53354a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Form Card */
+.form-card {
+    background-color: #162447;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.form-card h1 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+/* Error and Success Messages */
+.error-messages {
+    background-color: rgba(255, 76, 76, 0.1);
+    border: 1px solid #ff4c4c;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.error {
+    color: #ff4c4c;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.success {
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid #4caf50;
+    color: #4caf50;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #1f4068;
+    color: #ffffff;
+    border: 1px solid #2e2e3d;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder, select::placeholder {
+    color: #aaaaaa;
+}
+
+input:focus, select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+select {
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Inline Error Messages */
+.form-error {
+    color: #ff4c4c;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Registration-Specific Adjustments */
+form select {
+    padding: 12px;
+    background-color: #1f4068;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Spacing Below the Form */
+.form-card p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .form-card {
+        padding: 30px 20px;
+    }
+
+    .form-card h1 {
+        font-size: 1.8rem;
+    }
+
+    input, button, select {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 0.85rem;
+    }
+}

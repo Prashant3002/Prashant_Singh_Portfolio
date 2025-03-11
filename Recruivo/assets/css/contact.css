@@ -1,0 +1,127 @@
+/* Contact Form Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #1a1a2e;
+}
+
+.contact-card {
+    background-color: #162447;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4caf50;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbbbbb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+/* Success and Error Messages */
+.success {
+    color: #4caf50;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.error {
+    color: #ff4c4c;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.error-messages {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Error Messages for Specific Fields */
+.form-error {
+    color: #ff4c4c;
+    font-size: 0.85rem;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}

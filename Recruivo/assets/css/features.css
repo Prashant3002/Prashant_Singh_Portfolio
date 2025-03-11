@@ -1,0 +1,262 @@
+/* features.css */
+
+/* Hero Section */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(-45deg, #1a1a2e, #162447, #0f3460, #53354a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 20px;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content .highlight {
+    color: #4caf50;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 20px;
+    background-color: #1a1a2e;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: #162447;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 80px 20px;
+    background-color: #162447;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 20px;
+    background-color: #1a1a2e;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: #162447;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.benefit-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-card ul li {
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.benefit-card ul li::before {
+    content: "•";
+    color: #4caf50;
+    position: absolute;
+    left: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 20px;
+    background-color: #4caf50;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #4caf50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 30px;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}

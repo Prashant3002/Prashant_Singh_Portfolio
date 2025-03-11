@@ -1,0 +1,58 @@
+/* dark-mode.css */
+
+/* Theme Toggle Container */
+.theme-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* SVG Icon Styles */
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Show/Hide Icons based on Theme */
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+/* Dark Theme Specific Styles */
+[data-theme="dark"] .sun-icon {
+    display: block;
+}
+
+[data-theme="dark"] .moon-icon {
+    display: none;
+}
+
+/* Theme-specific colors */
+[data-theme="light"] .theme-toggle {
+    color: #1a1a2e;
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: #ffffff;
+}
+
+/* Hover Effects */
+.theme-toggle:hover svg {
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}

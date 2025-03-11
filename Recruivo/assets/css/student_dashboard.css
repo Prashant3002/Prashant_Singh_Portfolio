@@ -1,0 +1,128 @@
+/* Header Section */
+.dashboard-header {
+    text-align: center;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+}
+
+.logout-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #45a049;
+}
+
+/* Main Container */
+.dashboard-container {
+    padding: 20px;
+    background-color: #162447;
+    color: white;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.profile-section h2 {
+    color: #4caf50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    background-color: #1f4068;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Applications Section */
+.applications-section {
+    margin-bottom: 40px;
+}
+
+.applications-section h2 {
+    color: #4caf50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.application-card {
+    background-color: #1f4068;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+}
+
+.application-card h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.application-card span.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.applied {
+    background-color: #ff9800;
+    color: white;
+}
+
+.status.shortlisted {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status.rejected {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+}

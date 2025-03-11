@@ -1,0 +1,2 @@
+INSERT INTO `student_profiles` (`profile_id`, `user_id`, `roll_number`, `first_name`, `middle_name`, `last_name`, `mobile_number`, `email`, `gender`, `dob`, `college`, `degree`, `branch`, `year_of_passing`, `tenth_percent`, `twelfth_percent`, `graduation_percent`, `skills`) VALUES
+(2, 5, '112322', 'Abhishek', 'Jaat', 'siloth', '7786545690', 'silothabhishek@gamil.com', 'Male', '2000-05-15', 'BBC College', 'MCA', 'AI', '2023', 85.50, 88.00, 90.00, 'Java, Python, HTML, PHP');
